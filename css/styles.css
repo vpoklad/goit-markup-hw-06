@@ -342,15 +342,14 @@ img {
 }
 .employee-cards {
   display: flex;
- }
+}
 .employee-cards-item {
-  flex-basis: calc((100% - 4 * 30px)) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
   text-align: center;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
 }
 .employee-cards-item:not(:last-child) {
   margin-right: 30px;
@@ -443,10 +442,10 @@ img {
 .footer-container {
   display: flex;
 }
-.footer-item{
-  flex-basis: calc((100% - 4 * 30px)) / 4);
+.footer-item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
 }
-.footer-item:not(:last-child){
+.footer-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -531,9 +530,12 @@ img {
   transform: translate(-50%, -50%) scale(1);
 
   width: 521px;
-  height: 528px;
-  padding: 10px;
+  height: 581px;
+  padding: 40px;
+  border-radius: 4px;
   background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -541,6 +543,9 @@ img {
   transform: translate(-50%, -50%) scale(1.2);
 }
 .modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: block;
   margin-left: auto;
 
@@ -553,6 +558,63 @@ img {
 .modal-button:hover,
 .modal-button:active {
   color: var(--accent-color);
+}
+
+.form .title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  /* letter-spacing: 0.03em; */
+  color: var(--title-color);
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+}
+.form-field input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 12px;
+}
+.form-field textarea[name='comment'] {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-field textarea[name='comment']:placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.form-field .check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.form-field .check-text .link {
+  color: var(--accent-color);
+}
+.form-field.chek-box {
+  display: block;
+  margin-bottom: 30px;
+}
+.form-submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
 }
 /* Portfolio */
 
