@@ -567,11 +567,15 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
+
   display: block;
   margin-left: auto;
 
   background-color: #fff;
-  border-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -603,13 +607,17 @@ img {
 
   letter-spacing: 0.01em;
 }
-.form-field input {
+.form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   padding: 12px;
+}
+.form-input:focus {
+  outline-color: var(--accent-color);
 }
 .form-field textarea[name='comment'] {
   padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+
   resize: none;
   color: rgba(117, 117, 117, 0.5);
 }
