@@ -286,46 +286,56 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container container">
-            <div class="footer-item">
-                <a href="./" class="logo inverse"><span class="accent">Web</span>Studio</a>
-                <address class="address">
-                    <a href="https://goo.gl/maps/Cqjtd7NMXMsjPBQS7" class="map-link" target="_blank"
-                        rel="noopener norefferer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
-                    <ul class="address-items list">
-                        <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                        <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
-                    </ul>                
-                </address>
-           </div>
-           <div class="footer-item follow">
-               <p>присоединяйтесь</p>
-            <ul class="socilal-links list">
-                <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow" class="social link footer-link">
-                        <svg class="icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a></li>
-                <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow" class="social link footer-link">
-                        <svg class="icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a></li>
-                <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow" class="social link footer-link ">
-                        <svg class="icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a></li>
-                <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow" class="social link footer-link">
-                        <svg class="icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a></li>
-            </ul>
-           </div>
+        <div class="container footer-container">
             
-        </div> <!-- /container -->
-        
+                <div class="footer-item">
+                    <a href="./" class="logo inverse"><span class="accent">Web</span>Studio</a>
+                    <address class="address">
+                        <a href="https://goo.gl/maps/Cqjtd7NMXMsjPBQS7" class="map-link" target="_blank"
+                            rel="noopener norefferer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+                        <ul class="address-items list">
+                            <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                            <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-item follow">
+                    <p class="footer-title">присоединяйтесь</p>
+                    <ul class="socilal-links list">
+                        <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow"
+                                class="social link footer-link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow"
+                                class="social link footer-link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow"
+                                class="social link footer-link ">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-links-item"><a href="" target="_blank" rel="noopenner noreferrer nofollow"
+                                class="social link footer-link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="footer-item subsribe">
+                    <p class="footer-title">Подпишитесь на рассылку</p>
+                    <form class="subscribe-form">
+                        <input type="text" class="subscribe-input">
+                        <button type="submit" class="button-hero">Подписаться</button>
+                    </form>
+                </div> 
+        </div> <!-- /container -->        
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -344,20 +354,15 @@
 
                 <div role="group" aria-labelledby="поле для" class="form-field">
                     <label for="email">Почта</label>
-                    <input type="email" name="email" id="email" placeholder="">
+                    <input type="email" name="email" id="email" placeholder="Введите текст">
                     
                 </div>
 
                 <div role="group" aria-labelledby="поле для" class="form-field">
                     <label for="comment">Комментарии</label>
-                    <textarea name="comment" placeholder="Введите текст"
-                    id="comment" 
+                    <textarea name="comment" placeholder="Введите текст" id="comment" 
                     cols="30" 
-                    rows="5"
-                    
-                    >
-                    </textarea>
-                    
+                    rows="5"></textarea>                    
                 </div>
 
                 <div role="group" aria-labelledby="поле для" class="form-field chek-box">
@@ -369,7 +374,7 @@
                 
 
                 
-                <button type="submit" class="button primary form-submit">Отправить</button>
+                <button type="submit" class="button-hero form-submit">Отправить</button>
             </form>
         </div>
     </div>
